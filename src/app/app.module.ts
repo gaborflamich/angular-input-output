@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { InputParentToChildComponent } from './components/input-parent-to-child/input-parent-to-child.component';
 import { OutputChildToParentComponent } from './components/output-child-to-parent/output-child-to-parent.component';
 import { OutputChildToParentClickComponent } from './components/output-child-to-parent-click/output-child-to-parent-click.component';
+import { ViewchildChildToParentComponent } from './components/viewchild-child-to-parent/viewchild-child-to-parent.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,6 +18,7 @@ import { OutputChildToParentClickComponent } from './components/output-child-to-
     InputParentToChildComponent,
     OutputChildToParentComponent,
     OutputChildToParentClickComponent,
+    ViewchildChildToParentComponent,
   ],
 })
 export class AppModule {}
