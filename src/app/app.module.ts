@@ -7,6 +7,7 @@ import { InputParentToChildComponent } from './components/input-parent-to-child/
 import { OutputChildToParentComponent } from './components/output-child-to-parent/output-child-to-parent.component';
 import { OutputChildToParentClickComponent } from './components/output-child-to-parent-click/output-child-to-parent-click.component';
 import { ViewchildChildToParentComponent } from './components/viewchild-child-to-parent/viewchild-child-to-parent.component';
+import { ServiceSiblingComponent } from './components/service-sibling/service-sibling.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,6 +20,7 @@ import { ViewchildChildToParentComponent } from './components/viewchild-child-to
     OutputChildToParentComponent,
     OutputChildToParentClickComponent,
     ViewchildChildToParentComponent,
+    ServiceSiblingComponent,
   ],
 })
 export class AppModule {}

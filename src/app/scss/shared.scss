@@ -1,40 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  margin-top: 0;
+  color: black;
+}
+h3 {
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+h4 {
+  font-size: 26px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 22px;
+  color: black;
+}
 .parent {
   margin-bottom: 30px;
-  background: #0f0c29; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-top: 0;
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
   padding: 20px;
   color: white;
+  border-radius: 5px;
+  min-height: 282px;
+  h2 {
+    color: white;
+  }
+  p {
+    color: white;
+  }
+}
+
+.sibling {
+  background: linear-gradient(to right, #89216b, #da4453);
+  padding: 20px;
+  border-radius: 5px;
+  min-height: 282px;
+  h2 {
+    color: white;
+  }
+  h3 {
+    color: white;
+  }
   p {
     color: white;
   }
 }
 
 .child {
-  background: #2193b0; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #6dd5ed,
-    #2193b0
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #6dd5ed,
-    #2193b0
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
   padding: 20px;
   margin-top: 10px;
+  border-radius: 5px;
+  h4 {
+    margin-top: 0;
+  }
   p {
     color: black;
   }
@@ -66,19 +95,36 @@ button:hover {
   color: #fff;
   text-decoration: none;
 }
-h2 {
-  margin-top: 0;
-  color: black;
-}
-h3 {
-  font-size: 28px;
-}
-h4 {
-  font-size: 26px;
-  color: black;
+
+button.cta-blue {
+  background-image: linear-gradient(
+    to right,
+    #1fa2ff 0%,
+    #12d8fa 51%,
+    #1fa2ff 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+
+  &:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
-p {
-  font-size: 22px;
-  color: black;
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.grid-item {
+  margin-bottom: 30px;
 }
