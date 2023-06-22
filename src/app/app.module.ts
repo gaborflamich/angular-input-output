@@ -3,16 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { InputParentToChildComponent } from './components/input-parent-to-child/input-parent-to-child.component';
+import { OutputChildToParentComponent } from './components/output-child-to-parent/output-child-to-parent.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    InputParentToChildComponent,
+    OutputChildToParentComponent,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
