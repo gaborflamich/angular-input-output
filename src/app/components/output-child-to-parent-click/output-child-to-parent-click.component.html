@@ -1,1 +1,7 @@
-<p>output-child-to-parent-click works!</p>
+<div class="parent">
+  <h3>[Parent]</h3>
+  <p>{{ message }}</p>
+  <app-output-child-click
+    (messageEvent)="receiveMessage($event)"
+  ></app-output-child-click>
+</div>
